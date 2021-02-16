@@ -1,0 +1,139 @@
+
+:root{
+    --size-font-parameter : 50px;
+    --size-font-icon : 70px;
+    --size-font-form : 25px;
+    --size-font-input : 20px;
+}
+
+body{
+    align-items: center;
+}
+.icone{
+    font-size: var( --size-font-icon);
+}
+#ville{
+    font-size: var(--size-font-parameter);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    margin: auto;
+    margin-top: 100px;
+    grid-gap: 1em;
+    width :900px;
+    justify-items: stretch; /* start, center, end, stretch  horizontal */
+    align-items: stretch ; /* start, center, end, stretch vertical */
+}
+.wrapper > div{
+background: #eee ;
+padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background: #ddd;
+}
+.box0{
+    grid-column:  1/5;
+    grid-row: 1;
+    border: #333 1px solid;
+}
+/* ********************************************************************* */
+/* boite 1                                                               */
+/* ********************************************************************* */
+.box1{
+    /* align-self: start; */
+    grid-column: 1/5; /* occupe les espaces en horizontal 1 à 3 */
+    grid-row: 2; /* occupe les espaces en vertical 1 à 3 */
+    align-items: center;
+    display: grid;;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px,auto);
+    border: #333 1px solid;
+}
+.box1 #international{
+    grid-column: 1/3;
+    grid-row: 1;
+    font-size: var(--size-font-form);
+}
+.box1 #international select{
+    font-size: var(--size-font-input);
+}
+
+.box1 form{
+    grid-column: 3/5;
+    grid-row: 1;
+    font-size: var(--size-font-form);
+}
+.box1 form input{
+    font-size: var(--size-font-input);
+    width : 200px;
+}
+/* ********************************************************************* */
+/* boite 2                                                               */
+/* ********************************************************************* */
+.box2{
+    /* align-self: center; */
+    grid-column: 1/3; /* occupe l'espace en horizontal  3 */
+    grid-row: 3/5; /* occupe les espaces en vertical 1 à 3 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px,auto);
+    border: #333 1px solid;
+}
+.box2 #icone{
+    grid-column: 1;
+    grid-row: 1;
+}
+.box2 #temperature{
+    grid-column: 2;
+    grid-row:  1;
+    font-size: var(--size-font-parameter);
+}
+/* ********************************************************************* */
+/* boite 3                                                              */
+/* ********************************************************************* */
+.box3{
+    /* align-self: end; */
+    grid-column: 3/5;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px,auto);
+    border: #333 1px solid;
+}
+.box3 #icone{
+    grid-column: 1;
+    grid-row: 1;
+}
+.box3 #vent-force{
+    grid-column: 2;
+    grid-row:  1;
+    font-size: var(--size-font-parameter);
+}
+.box3 #vent-direction{
+    grid-column: 2;
+    grid-row:  2;
+    font-size: var(--size-font-parameter);
+}
+/* ********************************************************************* */
+/* boite 4                                                              */
+/* ********************************************************************* */
+.box4{
+    /* align-self: center; */
+    grid-column: 1/5;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px,auto);
+    border: #333 1px solid;
+}
+.box4 #icone{
+    grid-column: 1;
+    grid-row: 1;
+}
+.box4 #meteo{
+    grid-column: 2;
+    grid-row:  1;
+    font-size: var(--size-font-parameter);
+}

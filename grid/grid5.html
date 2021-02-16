@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display : flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 300px;
+        }
+        .column{
+            flex : 1 1 150px ; /* streching */
+            /* flex : 0 1 150px ; streching */
+            background-color: greenyellow;
+            place-content: center;
+            margin: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column"> <div> col1</div> </div>
+        <div class="column"> col2 </div>
+        <div class="column"> col3 </div>
+    </div>
+</body>
+</html>

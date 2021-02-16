@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- mon style -->
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-column-gap: 1em;
+        }
+        .wrapper > div{
+        background: #eee ;
+        padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+    <title>Grid css</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="texte1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat reiciendis doloremque temporibus, repudiandae dignissimos in ipsa, laudantium veritatis nobis incidunt alias esse qui necessitatibus voluptatum ratione? Alias optio non, esse eius officiis dolorum, delectus voluptatum totam a soluta culpa animi libero qui harum. Quos esse assumenda alias eligendi, autem enim consequatur pariatur, nostrum ab hic obcaecati deleniti? Ipsam temporibus eos officia similique voluptatem? Distinctio tempore totam, impedit, error natus, ipsam suscipit labore veniam quidem animi eaque voluptates dolorum asperiores mollitia.
+        </div>
+        <div class="texte2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim facilis reiciendis odio ad. Aperiam praesentium in eaque fugit ducimus, atque, rem dolorem aliquid, vitae magnam nemo nobis dolorum commodi facilis.
+        </div>
+        <div class="texte1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat reiciendis doloremque temporibus, repudiandae dignissimos in ipsa, laudantium veritatis nobis incidunt alias esse qui necessitatibus voluptatum ratione? Alias optio non, esse eius officiis dolorum, delectus voluptatum totam a soluta culpa animi libero qui harum. Quos esse assumenda alias eligendi, autem enim consequatur pariatur, nostrum ab hic obcaecati deleniti? Ipsam temporibus eos officia similique voluptatem? Distinctio tempore totam, impedit, error natus, ipsam suscipit labore veniam quidem animi eaque voluptates dolorum asperiores mollitia.
+        </div>
+        <div class="texte2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim facilis reiciendis odio ad. Aperiam praesentium in eaque fugit ducimus, atque, rem dolorem aliquid, vitae magnam nemo nobis dolorum commodi facilis.
+        </div>
+    </div>
+</body>
+</html>

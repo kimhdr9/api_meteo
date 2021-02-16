@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- mon style -->
+    <link rel="stylesheet" href="grid.css">
+    <title>Css Grid</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- titre et input -->
+
+        <div class="box0">
+            <div id="ville">Météo des villes</div>
+        </div>
+
+        <div class="box1">
+            <!-- choix de la langue  -->
+            <div id="international">
+                <label for="langue-select">Langue :</label>
+
+                <select name="langue" id="langue-select">
+                    <option value="fr">--choix de la langue--</option>
+                    <option value="fr">Français</option>
+                    <option value="ru">Russe</option>
+                    <option value="en">Anglais</option>
+                    <option value="es">Espagnol</option>
+                    <option value="de">Allemand</option>
+                    <option value="vi">Vietnamien</option>
+                </select>
+            </div>
+            <!-- formulaire pour saisir la ville -->
+            <form >
+                <label >Code postal :</label>
+                <input class="input" type="number" placeholder="Entrer le ici" id="input" maxlength="5">
+            </form>
+        </div>
+        <!-- affichage de la temperature -->
+        <div class="box2">
+            <div class="icone">
+                <i class="fas fa-temperature-low"></i>     
+            </div>
+            <div id="temperature"> 5°C </div>
+        </div>
+        <!-- affichage du vent -->
+        <div class="box3">
+            <span class="icone">
+                <i class="fas fa-wind"></i>     
+            </span>
+            <div id="vent-force"> 5 m/s </div>
+            <div id="vent-direction"> 30 deg </div>
+        </div>
+        <!-- affichage autres informations -->
+        <div class="box4">
+            <span class="icone">
+                <i class="fas fa-cloud"></i>     
+            </span>
+            <div id="meteo"> beau temps </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <script src="./main.js"></script>
+</body>
+</html>

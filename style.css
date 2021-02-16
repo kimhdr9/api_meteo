@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 20px;
+    align-items: center;
+    width: 800px;
+}
+
+#formulaire{
+    background-color: skyblue;
+    align-items: center;
+}
+#input{
+    align-content: center;
+    width: 200px;
+}
+#info{
+    margin: 40px auto;
+    height: 400px;
+}
+
+.icon{
+    font-size: 150px;
+    margin: auto;
+}
+.block{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+.bloc{
+    width:200px;
+    float : left;
+    margin : 50px 50px; 
+}
